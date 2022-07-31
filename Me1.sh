@@ -47,8 +47,6 @@ echo "******************************************************************"
 echo " "
 echo " "
 
-ps -A | grep graftcp* | awk '{print $1}' | xargs kill -9 $1
-
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
 
 sleep .5
